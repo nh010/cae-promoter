@@ -1,0 +1,9 @@
+[project]
+name = "cae-promoter-scripts"
+version = "0.1.0"
+description = "Helper scripts for the CAE Promoter Claude Code skill"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["scripts/tests"]

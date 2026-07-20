@@ -1,0 +1,53 @@
+# Promo record — what this CAE Promoter session produced. Written to promo/promo-record.yaml.
+schema_version: 2
+asset:
+  listing_url: "<https://exchange.tenable.com/<type>/<slug>>"
+  github_url: "<https://github.com/<owner>/<repo>>"
+  listing_type: "<agents|skills|mcp-servers|playbooks>"
+  slug: "<slug>"
+  name: "<display name, e.g. SOC Hunter>"
+  submission_pr: null         # the contributor's accepted "Add listing" PR number (spoken in the promo clip), e.g. 59
+contributor_type: "<employee|partner|community>"
+contributor_profile:          # gathered for the intake form; each field tagged derived|asked
+  name: {value: "<...>", source: "<derived|asked>"}
+  job_title: {value: "<...>", source: "<derived|asked>"}
+  organization: {value: "<...>", source: "<derived|asked>"}
+  work_email: {value: "<...>", source: "asked"}
+  github_handle: {value: "<...>", source: "<derived|asked>"}
+  region: {value: "<one of the form's fixed options>", source: "asked"}
+  industry: {value: "<one of the form's fixed options>", source: "asked"}
+  org_size: {value: "<specific number, else fixed range>", source: "asked"}
+  security_team_size: {value: "<specific number, else fixed range>", source: "asked"}
+  future_outreach: {value: "<Yes|No>", source: "asked"}   # always asked; a permission, never inferred
+socials:                      # collected only if social_tag_optin == Yes (form field 17, entry.1985420160)
+  tag_optin: "<Yes|No>"       # required on the form; No -> leave the handles empty
+  x_twitter: "<@handle or blank>"
+  bluesky: "<handle or blank>"
+  linkedin: "<profile or blank>"
+  reddit: "<handle or blank>"
+  other: "<profile/handle or blank>"
+intake_form:
+  status: "<offered|submitted|declined>"   # contributor's own report; skill can't confirm server-side
+  prefill_url_built: false
+capabilities_run: []          # e.g. [copy, video, visual-aids]
+files_generated: []           # promo/-relative paths written this session
+value_statements:
+  count: 0
+  measured: 0                 # firsthand hard numbers
+  estimated: 0                # defensible estimates (no-metric path), labeled as estimates
+  qualitative: 0              # non-numeric value, when even an estimate isn't possible
+  unverified: []              # statements the truth-check couldn't substantiate
+hexa:
+  claimed: false              # contributor said it uses the Hexa AI MCP
+  verified: false             # repo code/docs confirm it (badge only if true)
+video:
+  planned: false              # recorded via the shared Riverside link (no MP4 here)
+  promo_clip: false           # the 30-60s promo clip (name/title/org/asset/PR/what+why)
+  demo: false                 # the 2-3 min demo
+promotion_edit_pr:            # the NEW capability-C PR (distinct from asset.submission_pr above)
+  opened: false               # contributor opened it on their own GitHub auth
+  url: "<pr url if opened>"
+review_flags: []              # e.g. [waiver-needed, customer-named, third-party-cited, brand-rule-trip]
+approval:
+  handoff_approved: false     # true only if the contributor explicitly approved the handoff
+timestamp: "<set by host at write time — do not generate>"

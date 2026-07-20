@@ -1,0 +1,26 @@
+# Handoff manifest — the pull pointer the Practice team's ingest agent reads (sub-project 2).
+# Written to promo/handoff.yaml ONLY after the contributor explicitly approves the handoff.
+schema_version: 2
+riverside_link: "<contributor's Riverside preview/project link to their recorded take>"
+promotion_edit_pr_url: "<capability-C promotion-edit PR url, if the contributor opened one>"
+asset:
+  listing_url: "<...>"
+  github_url: "<...>"
+  listing_type: "<agents|skills|mcp-servers|playbooks>"
+  slug: "<slug>"
+  name: "<display name>"
+  submission_pr: null        # accepted "Add listing" PR number (spoken in the promo clip)
+contributor_type: "<employee|partner|community>"
+socials:                     # present only if the contributor opted in to social tagging
+  tag_optin: "<Yes|No>"
+  x_twitter: "<@handle or blank>"
+  bluesky: "<handle or blank>"
+  linkedin: "<profile or blank>"
+  reddit: "<handle or blank>"
+  other: "<profile/handle or blank>"
+capabilities_run: []
+video:
+  planned: false             # recorded via Riverside; team pulls + edits + hosts
+  promo_clip: false          # 30-60s
+  demo: false                # 2-3 min
+review_flags: []
