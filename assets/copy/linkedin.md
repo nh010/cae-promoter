@@ -2,9 +2,9 @@
      Pull the lead straight from value-statements.md (the strongest verified statement).
      Brand rules: sentence case, contractions OK, one CTA, no product-name abbreviations
      (never VM/RBVM/Tenable.io/etc.), smart quotes, minimize em dashes (hard cap ONE for a post
-     this length). Voice per your contributor type (see references/voice-profiles.md):
-     employee may speak as Tenable; partner/community "we" = your own team, reference Tenable
-     factually, never imply endorsement. -->
+     this length). Voice per your contributor type (see references/voice-profiles.md): community/
+     partner "we" = your own team, reference Tenable factually, never imply endorsement; a Tenable
+     employee may speak as Tenable. -->
 
 <hook: the result or the problem it kills>
 

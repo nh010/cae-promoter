@@ -1,7 +1,8 @@
 # Handoff manifest — the pull pointer the Practice team's ingest agent reads (sub-project 2).
 # Written to promo/handoff.yaml ONLY after the contributor explicitly approves the handoff.
-schema_version: 2
-riverside_link: "<contributor's Riverside preview/project link to their recorded take>"
+# Note: the recording link is NOT here. Tenable emails the contributor a virtual recording studio
+# link after they submit the intake form; the take lives at that studio, not in this manifest.
+schema_version: 3
 promotion_edit_pr_url: "<capability-C promotion-edit PR url, if the contributor opened one>"
 asset:
   listing_url: "<...>"
@@ -20,7 +21,7 @@ socials:                     # present only if the contributor opted in to socia
   other: "<profile/handle or blank>"
 capabilities_run: []
 video:
-  planned: false             # recorded via Riverside; team pulls + edits + hosts
+  planned: false             # recorded at the emailed virtual recording studio; team pulls + edits + hosts
   promo_clip: false          # 30-60s
   demo: false                # 2-3 min
 review_flags: []

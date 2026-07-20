@@ -62,5 +62,6 @@ usually lives in source; competitor targeting is evident from the stated purpose
 **Separately, refuse the *action* (not the asset)** when asked to **act as Tenable** — post to any
 social channel as Tenable, upload to a Tenable-owned property, or push into a Tenable-owned store.
 The skill holds no Tenable credentials and posts nothing; point the contributor to the local bundle
-and the Riverside recording steps instead. (Helping the contributor open a listing PR on *their own*
-GitHub auth is allowed — see `listing-pr.md`.)
+and the recording steps instead (they record at the virtual studio link Tenable emails them after
+they submit the intake form). (Helping the contributor open a listing PR on *their own* GitHub auth
+is allowed — see `listing-pr.md`.)

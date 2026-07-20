@@ -1,16 +1,18 @@
 ---
 name: cae-promoter
-description: Use when a CyberAgents Exchange contributor wants to promote, market, or drive stars and installs to an already-published agent, skill, MCP server, or playbook — on the Exchange (Rising 🚀, leaderboard) or externally. Requires a published listing; refer unlisted contributors to cyberagents-exchange-submit first. Not for building or submitting an asset, and not for acting as Tenable.
+description: Use when any CyberAgents Exchange contributor (community, partner, or Tenable employee) wants to promote, market, or drive stars and installs to an already-published agent, skill, MCP server, or playbook — on the Exchange (Rising 🚀, leaderboard) or externally. Open to every contributor, community-first. Requires a published listing; refer unlisted contributors to cyberagents-exchange-submit first. Not for building or submitting an asset, and not for acting as Tenable.
 ---
 
 # CAE Promoter
 
-Coach a CyberAgents Exchange contributor to promote an **already-published** asset: interview for
+Coach **any** CyberAgents Exchange contributor — community, partner, or Tenable employee, and
+**community-first** by design — to promote an **already-published** asset: interview for
 quantifiable value, look up their submission PR, draft an on-brand `promo/` bundle, build a
-pre-filled intake-form link they submit, coach a Riverside recording, and optionally open a
-listing-edit PR on their own GitHub. **It coaches and drafts — it holds no Tenable credentials,
-posts nothing, and never acts as Tenable.** Its only outputs are local files under `promo/` plus
-on-screen guidance.
+pre-filled intake-form link they submit, prep them to record a promo clip and demo at a virtual
+recording studio, and optionally open a listing-edit PR on their own GitHub. **It coaches and
+drafts — it holds no Tenable credentials, posts nothing, and never acts as Tenable.** Its only
+outputs are local files under `promo/` plus on-screen guidance. The promo package is the
+contributor's to post on their own channels; Tenable also scouts standout contributions to amplify.
 
 ## Platform
 
@@ -59,11 +61,15 @@ the mechanical half of Gate 3 (judgment calls — voice, customer names — stil
 **Step 5 — Intake form.** After value statements are confirmed and the bundle is emitted, **before**
 recording: follow `references/intake-form.md` → build the pre-filled link via
 `scripts/build_prefill_url.py` → hand it over for the contributor to **review and submit themselves
-(never auto-POST)** → record offered/submitted/declined. Declining does not block the session.
+(never auto-POST)** → record offered/submitted/declined. Submitting the form is also what triggers
+Tenable to email the contributor their virtual recording studio link (Step 6). Declining does not
+block the session.
 
 **Step 6 — Approve & hand off.** Follow `references/handoff.md`: consent screen → explicit approval
-→ coach the **Riverside recording** at the team link (record the preview link) → optionally open the
-**promotion-edit PR** via `references/listing-pr.md` (contributor's own auth) → write
+→ set recording expectations — **once the contributor submits the intake form (Step 5), Tenable
+emails them a virtual recording studio link**; the skill preps them with the promo-clip script + demo
+outline in `promo/video/recording-outline.md` so they're ready when the link arrives → optionally
+open the **promotion-edit PR** via `references/listing-pr.md` (contributor's own auth) → write
 `promo/handoff.yaml`. Declining leaves everything local, writes no manifest, opens no PR.
 
 ## The three gates (always on)

@@ -1,13 +1,14 @@
-<!-- Recording outline — TWO deliverables from ONE Riverside session. The skill fills the <...>
-     prompts from the listing + repo + value-statements.md. Record both through the shared Riverside
-     link the skill gave you; async gives you a preview + re-record loop. Don't chase perfection —
-     the team edits and finds the best moments. You record; the team edits, captions, and hosts.
-     Full framing: references/capability-video.md. -->
+<!-- Recording outline — TWO deliverables from ONE recording session. The skill fills the <...>
+     prompts from the listing + repo + value-statements.md. After you submit the intake form, Tenable
+     emails you a virtual recording studio link; record both takes there. The async studio gives you a
+     preview + re-record loop. Don't chase perfection — the team edits and finds the best moments.
+     You record; the team edits, captions, and hosts. Full framing: references/capability-video.md. -->
 
 # Recording outline — <asset name>
 
-**Record both takes through the shared Riverside link. Re-record as many times as you like; the team
-edits and picks the best moments. Don't aim for perfect — aim for real and clear.**
+**After you submit the intake form, Tenable emails you a virtual recording studio link — record both
+takes there. Re-record as many times as you like; the team edits and picks the best moments. Don't
+aim for perfect — aim for real and clear.**
 
 ## Deliverable 1 — 30–60s promo clip
 

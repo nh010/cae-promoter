@@ -41,7 +41,7 @@ hexa:
   claimed: false              # contributor said it uses the Hexa AI MCP
   verified: false             # repo code/docs confirm it (badge only if true)
 video:
-  planned: false              # recorded via the shared Riverside link (no MP4 here)
+  planned: false              # recorded at the emailed virtual recording studio (no MP4 here)
   promo_clip: false           # the 30-60s promo clip (name/title/org/asset/PR/what+why)
   demo: false                 # the 2-3 min demo
 promotion_edit_pr:            # the NEW capability-C PR (distinct from asset.submission_pr above)
