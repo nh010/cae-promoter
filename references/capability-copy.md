@@ -37,7 +37,8 @@ The on-Exchange copy that helps win stars: a sharpened **dek** (≤30 words) →
 contributor's own team's outcome; label estimates as estimates) → one CTA. Sentence-case headings;
 hyperlink any stat/claim. This is longer-form, so minimize em dashes rather than counting them.
 
-## Riverside auto-copy (note)
+## Recording-studio auto-copy (note)
 
-After recording, Riverside auto-suggests social/blog/newsletter copy the **team** may lift. That's
-a post-recording complement; the skill's brand-checked copy governs the written bundle here.
+After recording, the virtual recording studio may auto-suggest social/blog/newsletter copy the
+**team** can lift. That's a post-recording complement; the skill's brand-checked copy governs the
+written bundle here.

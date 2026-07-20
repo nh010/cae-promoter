@@ -14,16 +14,16 @@ off until they see this and explicitly approve.
 Only an explicit yes proceeds. On decline: stop here — everything stays local, no `handoff.yaml` is
 written, no PR is opened.
 
-## 3a. Riverside recording steps
+## 3a. Recording — set expectations, don't hand a link
 
-Coach the contributor to record **both deliverables** (30–60s promo clip + 2–3 min demo) through the
-team-owned shared async link, using `promo/video/recording-outline.md`:
+The skill has **no** recording link to give. Tell the contributor plainly: **once they submit the
+intake form (Step 5), Tenable emails them a virtual recording studio link.** The skill's job here is
+to make sure they're ready — walk them through `promo/video/recording-outline.md` so the promo-clip
+script and demo outline are set before the link arrives.
 
-`https://riverside.com/async-recording/invitation/78d41bff452767605718a1d666e5848d87ba7397`
-
-Async gives a preview/re-record loop; coach "don't chase perfection — the team edits and finds the
-best moments." Have them **paste back the Riverside preview/project link.** The skill does not
-record, upload, edit, or host.
+Coach the recording itself: they'll record **both deliverables** (30–60s promo clip + 2–3 min demo)
+at the studio; the async studio gives a preview/re-record loop; "don't chase perfection — the team
+edits and finds the best moments." The skill does not record, upload, edit, or host.
 
 ## 3b. Optional listing PR
 
@@ -32,7 +32,9 @@ own standalone `gh`/git flow on their auth). Capture the returned **PR URL**.
 
 ## 4. Write the manifest
 
-Write `promo/handoff.yaml` from the template: the Riverside link + the promotion-edit PR URL (if
-opened) + the asset identity, contributor type, socials (if opted in), capabilities run, and review
-flags. Then print the exact next step: **"share this Riverside link with the Tenable AI Accelerator
-Practice team."** In v1 the manifest is a local file the contributor relays by hand.
+Write `promo/handoff.yaml` from the template: the promotion-edit PR URL (if opened) + the asset
+identity, contributor type, socials (if opted in), capabilities run, and review flags. The recording
+link is **not** captured here — it's emailed to the contributor by Tenable after form submission and
+lives in their inbox, not the manifest. Then print the exact next step: **"submit the intake form,
+then watch your inbox for the recording studio link from Tenable."** In v1 the manifest is a local
+file the contributor relays by hand.

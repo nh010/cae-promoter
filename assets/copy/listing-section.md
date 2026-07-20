@@ -4,7 +4,7 @@
      value-statements.md. Brand rules: sentence case headings, contractions OK, no product-name
      abbreviations, spell out product names in full on first reference then short form, smart
      quotes, minimize em dashes, hyperlink any stat/claim. Voice per your contributor type
-     (references/voice-profiles.md): "we" = your own team for partner/community; reference Tenable
+     (references/voice-profiles.md): "we" = your own team for community/partner; reference Tenable
      factually, never imply endorsement. -->
 
 ## <asset name>

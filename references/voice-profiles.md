@@ -8,21 +8,24 @@ partner or community contributor from accidentally implying they *are* Tenable o
 endorses their work. The stakes are highest on **Exchange-posted and public** copy; internal
 drafts are lower-risk.
 
+The skill is **community-first** — community contributors are the primary audience, so their profile
+leads the table.
+
 | Type | "we/us" means | May say | Must NOT say |
 |------|---------------|---------|--------------|
-| **Tenable employee** | Tenable | Speak *as* Tenable within brand rules; "our platform," "we built" | Product-name abbreviations (VM/RBVM/Tenable.io); over-brand (logo + lockup); brand name twice on one canvas |
-| **Tenable partner** | the partner's own company/team | "We integrate with Tenable," "we built this on Tenable," "works with Tenable"; their firsthand result ("we cut MTTR 88%") | "We at Tenable," "our Tenable platform," "a Tenable solution," "endorsed/certified by Tenable" — anything implying they are Tenable or that Tenable authored/endorses it |
 | **Community contributor** | the contributor's own organization/team | Own voice; their firsthand result; factual reference ("listed on the Tenable CyberAgents Exchange," "built with the Anthropic API") | Imply Tenable authored, endorses, recommends, or certifies it; speak as Tenable |
+| **Tenable partner** | the partner's own company/team | "We integrate with Tenable," "we built this on Tenable," "works with Tenable"; their firsthand result ("we cut MTTR 88%") | "We at Tenable," "our Tenable platform," "a Tenable solution," "endorsed/certified by Tenable" — anything implying they are Tenable or that Tenable authored/endorses it |
+| **Tenable employee** | Tenable | Speak *as* Tenable within brand rules; "our platform," "we built" | Product-name abbreviations (VM/RBVM/Tenable.io); over-brand (logo + lockup); brand name twice on one canvas |
 
 ## Do / don't examples
-
-**Partner**
-- ✅ "We cut our mean time to respond by 88% with the agent we built on Tenable."
-- ❌ "Our Tenable agent cuts MTTR 88%." (implies Tenable authorship)
 
 **Community**
 - ✅ "Our SOC now triages 3x the alerts with no added headcount. It's listed on the Tenable CyberAgents Exchange."
 - ❌ "Tenable recommends our skill for SOC triage." (implies endorsement)
+
+**Partner**
+- ✅ "We cut our mean time to respond by 88% with the agent we built on Tenable."
+- ❌ "Our Tenable agent cuts MTTR 88%." (implies Tenable authorship)
 
 **Employee**
 - ✅ "We built this skill to help teams get the cyber-hygiene basics right."

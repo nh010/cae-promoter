@@ -8,14 +8,14 @@ edit, and share.
 
 - `value-statements.md` — your quantifiable results, truth-checked (the spine of everything else)
 - `copy/` — channel-specific promo drafts (LinkedIn, X, Slack, listing/README section)
-- `video/recording-outline.md` — your Riverside recording guide: a scripted 30–60s promo clip (name, title, org, asset, PR number, what + why) plus a 2–3 min demo outline
+- `video/recording-outline.md` — your recording guide: a scripted 30–60s promo clip (name, title, org, asset, PR number, what + why) plus a 2–3 min demo outline
 - `visual-aids/` — on-brand diagram/screenshot/social-card guidance
 - `promo-record.yaml` — a record of what this session produced (and any review flags)
-- `handoff.yaml` — present only if you approved the handoff; points the Tenable team at your Riverside take (and promotion-edit PR, if any)
+- `handoff.yaml` — present only if you approved the handoff; points the Tenable team at your promotion-edit PR (if any)
 
 ## Next steps
 
 1. Review and edit every draft — you own the final words and the truth of every claim.
 2. Submit the **intake form** using the pre-filled link the skill generated: review every pre-filled answer, then click Submit. (The skill fills it from this session but never submits for you.)
-3. Record both the 30–60s promo clip and the 2–3 min demo through the shared Riverside link (`https://riverside.com/async-recording/invitation/78d41bff452767605718a1d666e5848d87ba7397`), using `recording-outline.md`. The promo-clip script is a guide, not a teleprompter — glance back at it, don't read it word-for-word. Don't chase perfection; the team edits and finds the best moments.
-4. To hand off to the Tenable AI Accelerator Practice team, follow the steps the skill printed (share your Riverside link).
+3. After you submit the intake form, **Tenable emails you a virtual recording studio link.** Use `recording-outline.md` to record both the 30–60s promo clip and the 2–3 min demo there. The promo-clip script is a guide, not a teleprompter — glance back at it, don't read it word-for-word. Don't chase perfection; the team edits and finds the best moments.
+4. That's the hand-off: submit the form, then watch your inbox for the recording studio link. The Tenable AI Accelerator Practice team takes it from there.

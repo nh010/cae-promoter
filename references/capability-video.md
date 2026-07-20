@@ -1,10 +1,13 @@
 # Capability B — video (flagship)
 
-The **Riverside async** model: one shared team-owned link produces **two deliverables** — the floor
-for every contributor. The skill drafts scripts/outlines and coaches; it never records, uploads,
-edits, or hosts. Fill `promo/video/recording-outline.md`.
+The **async virtual recording studio** model: one team-owned studio link produces **two
+deliverables** — the floor for every contributor. The skill drafts scripts/outlines and coaches; it
+never records, uploads, edits, or hosts. Fill `promo/video/recording-outline.md`.
 
-Shared link: `https://riverside.com/async-recording/invitation/78d41bff452767605718a1d666e5848d87ba7397`
+**How the contributor gets the link:** they don't get it from the skill. After they submit the
+intake form (session Step 5), **Tenable emails them their virtual recording studio link.** The
+skill's job is to have their promo-clip script and demo outline ready so they can record as soon as
+the link lands. No link is hardcoded here.
 
 ## Deliverable 1 — 30–60s promo clip (Claude-generated script)
 
@@ -32,9 +35,8 @@ a one-line "show this / say this" prompt.
 
 - **Screen-share checklist:** share only the demo window; hide bookmarks/notifications; hide
   customer/personal data; record at 1080p.
-- **"Don't chase perfection — the team edits and finds the best moments."** Async gives a
+- **"Don't chase perfection — the team edits and finds the best moments."** The async studio gives a
   preview/re-record loop.
-- **The team edits in Riverside** (bumpers, sound, captions) and returns a **preview link for
-  approval.**
-- **External dependencies (team-owned, not skill work):** the shared Riverside link + eventual
-  Riverside MCP (waitlist), and YouTube hosting.
+- **The team edits** (bumpers, sound, captions) and returns a **preview link for approval.**
+- **External dependencies (team-owned, not skill work):** the emailed virtual recording studio link
+  and YouTube hosting.
