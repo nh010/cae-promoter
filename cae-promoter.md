@@ -8,8 +8,7 @@ tier: "contributed"
 tags: ["claude-code", "exchange", "promotion", "marketing", "cybersecurity"]
 integrations: ["Anthropic"]
 date_added: 2026-07-20
-contribution_agreement_date: 2026-07-20T00:00:00Z
-works_with_tenable_hexa_mcp: false
+contribution_agreement_date: 2026-07-20T16:00:27Z
 compatible_platforms: ["Claude Code"]
 invocation: "/cae-promoter"
 ---
