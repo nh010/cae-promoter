@@ -1,0 +1,10 @@
+{
+  "total_count": 4,
+  "incomplete_results": false,
+  "items": [
+    {"number": 130, "title": "Add listing: SOC-Hunter (resubmit)", "state": "open", "pull_request": {"url": "x"}},
+    {"number": 88, "title": "Update SOC-Hunter tags", "state": "closed", "pull_request": {"url": "x"}},
+    {"number": 59, "title": "Add listing: SOC-Hunter", "state": "closed", "pull_request": {"url": "https://api.github.com/repos/tenable/cyberagents-exchange/pulls/59"}, "html_url": "https://github.com/tenable/cyberagents-exchange/pull/59"},
+    {"number": 12, "title": "Add listing: SOC-Hunter discussion", "state": "closed"}
+  ]
+}
