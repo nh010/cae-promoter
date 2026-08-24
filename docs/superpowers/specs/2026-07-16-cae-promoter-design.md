@@ -27,8 +27,7 @@ call-driven reversals/additions now baked in:**
 
 The team-side **ingest agent that auto-pulls into the private team store is sub-project 2** (fast
 follow), where the privileged Tenable auth legitimately lives. **YouTube hosting is a hard launch
-dependency** owned by the team, not the skill (leadership is deciding public channel vs.
-private-host-with-direct-links). **Deferred to post-v1:** a quotable-type value-statement tracker
+dependency** owned by the team, not the skill. **Deferred to post-v1:** a quotable-type value-statement tracker
 sheet and integration with the customer-marketing quote process. **The v1 skill still
 ships with zero Tenable credentials — it writes local files and, on approval, opens a PR from the
 contributor's own GitHub account.** Next step: propagate into the implementation plan.
@@ -291,9 +290,9 @@ dependency) host it. The skill uploads nothing and holds no Tenable credentials.
 
 > **External dependencies (team-owned, not skill scope):** (1) the **shared Riverside link** and,
 > eventually, the **Riverside MCP server** (waitlist — the team is on it) that could automate parts of
-> this; (2) **YouTube hosting** — leadership is deciding between a public channel and a
-> private-host-with-direct-links option for launch, but *some* YouTube home is required at launch.
-> Until the Riverside MCP lands, the link hand-off is manual; until YouTube hosting is decided, the
+> this; (2) **YouTube hosting** — *some* YouTube home is required at launch, and the hosting model
+> is the team's to settle.
+> Until the Riverside MCP lands, the link hand-off is manual; until YouTube hosting is settled, the
 > on-listing video advice is "link the demo from your README" (see capability C).
 
 ### C. On-Exchange optimization (+ listing PR)

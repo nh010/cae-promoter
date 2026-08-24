@@ -1473,7 +1473,7 @@ Named here so no task silently assumes them, per the spec's scope fork and the 2
   quote process (ship v1, then review with customer marketing).
 - Adding a `video_url` field to `validator.py` + an embed component to the website (Exchange
   platform work in two repos this project doesn't own).
-- **YouTube hosting** (public channel vs. private-host-with-direct-links) and the **Riverside MCP
+- **YouTube hosting** (model still to be settled by the team) and the **Riverside MCP
   server** (waitlist) automation — both team-owned launch dependencies, not skill work.
 - The seam decision: *where* the handoff manifest lands so the ingest agent picks it up without a
   human relay. v1 ships the manifest as a local file + one-time human relay of the Riverside link.
