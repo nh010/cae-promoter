@@ -21,7 +21,8 @@ intake form (Step 5), Tenable emails them a virtual recording studio link.** The
 to make sure they're ready — walk them through `promo/video/recording-outline.md` so the promo-clip
 script and demo outline are set before the link arrives.
 
-Coach the recording itself: they'll record **both deliverables** (30–60s promo clip + 2–3 min demo)
+Coach the recording itself: they'll record **both deliverables** (30–60s promo clip + 2–3 min
+demo — aim for 2–3, running over is fine, hard cap 4:00)
 at the studio; the async studio gives a preview/re-record loop; "don't chase perfection — the team
 edits and finds the best moments." The skill does not record, upload, edit, or host.
 

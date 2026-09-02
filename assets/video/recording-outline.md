@@ -25,13 +25,16 @@ aim for perfect — aim for real and clear.**
 
 ## Deliverable 2 — 2–3 min demo (beat-by-beat outline)
 
-<!-- Each beat has a rough clock and a one-line "show this / say this" prompt. -->
+<!-- Each beat has a rough clock and a one-line "say this / show this" prompt. Aim for 2–3 min;
+     running a little over is fine. HARD CAP 4:00 -- if you are heading past it, cut "Setup /
+     config tips" to one sentence. Beat 2 MUST carry at least one value metric or value anecdote,
+     taken from value-statements.md -- never invent one. -->
 
-- **Problem (~0:00–0:20):** say: <the pain your tool removes> · show: <the before state / manual slog>
-- **What it does (~0:20–0:50):** say: <the one-sentence what> · show: <the asset in context>
-- **Install / config (~0:50–1:30):** say: <how someone gets it running> · show: <the invocation / setup step>
-- **Value (~1:30–2:30):** say: <the firsthand result, the number> · show: <the output that proves it>
-- **Where to get it (~2:30–3:00):** say: <the CTA> · show: <the listing page>
+- **Intro (~0:00–0:15):** say: <your name>, PR #<submission PR number>, <listing name> · show: <you on camera, or your listing page>
+- **Elevator pitch (~0:15–0:45):** say: <what it does, as simply and succinctly as you can, and the value it delivers to you and your team — answering "why should other security teams deploy this?", carrying at least one value metric or value anecdote from value-statements.md> · show: <the number or result that proves it>
+- **Demo (~0:45–1:55):** say: <narrate what you are doing, high level> · show: <the most visual elements — the agent running in Terminal or inside another security tool, a playbook's architectural map, key charts or insights from a report it generated>
+- **Setup / config tips (~1:55–2:30):** say: <what's required to get it running, plus best practices and lessons learned> · show: <the setup step, config file, or install command>
+- **CTA (~2:30–2:45):** say: <it's on the CyberAgents Exchange — go check it out> · show: <your listing page>
 
 ### Screen-share checklist
 

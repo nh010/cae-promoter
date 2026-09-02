@@ -28,8 +28,31 @@ to prepare from and glance back at.
 
 ## Deliverable 2 — 2–3 min demo (beat-by-beat outline)
 
-Problem → what it does → install/config → value → where to get it. Each beat gets a rough clock and
-a one-line "show this / say this" prompt.
+**Five beats: intro → elevator pitch → demo → setup / config tips → CTA.** Each beat gets a rough
+clock and a one-line "show this / say this" prompt, filled from the listing, the repo, and
+`value-statements.md`.
+
+1. **Intro (~0:15)** — who they are, their submission PR number, and the asset's name. (Job title
+   and organization belong to the promo clip, not here.)
+2. **Elevator pitch (~0:30)** — the simplest, most succinct statement of what the asset does and
+   the value it delivers to them and their team. It must answer **"Why should other security teams
+   deploy this agent / skill / playbook / MCP server?"**, and it **must carry at least one value
+   metric** (analyst time saved, efficiency gained, false positives reduced) **or one value
+   anecdote** — e.g. "surfaced 37+ net-new true positives that other automated detection missed,
+   including an active insider threat, 4 MFA bypasses, and 952 critical cloud findings." Pull it
+   from `promo/value-statements.md`; Gate 1 still applies, so an unverified number gets flagged,
+   never invented.
+3. **Demo (~1:10)** — a visual, high-level walk-through on a shared screen. Show the asset's most
+   visual elements: interacting with the agent from Terminal or inside another security tool, an
+   architectural map of a playbook, key charts or insights from a report the skill generated.
+4. **Setup / config tips (~0:35)** — what's required to get it running, plus the best practices and
+   lessons learned that get the most out of it.
+5. **CTA (~0:15)** — it's on the CyberAgents Exchange; encourage people to go check it out.
+
+**Duration: coach 2–3 minutes, and let them run over if it happens** — the clocks above plan to
+~2:45 so there is slack inside the target. **The hard cap is 4:00.** When a run is heading past it,
+cut beat 4 to a single sentence and point people at the README: setup detail is the least
+persuasive minute in a promo demo, and it is the one beat a viewer can read instead of watch.
 
 ## Coaching + logistics
 
