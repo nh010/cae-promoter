@@ -7,6 +7,10 @@ on them here.
 import re
 import urllib.error
 import urllib.request
+try:  # imported as a package member (pytest: `from scripts.fetch_listing import ...`)
+    from scripts._http import FETCH_TIMEOUT, timeout_seconds
+except ImportError:  # run directly (`python3 scripts/fetch_listing.py`): scripts/ is sys.path[0]
+    from _http import FETCH_TIMEOUT, timeout_seconds
 
 CONTENT_RAW_BASE = "https://raw.githubusercontent.com/tenable/cyberagents-exchange/main"
 
@@ -62,7 +66,7 @@ def parse_frontmatter(md: str) -> dict:
 def fetch_listing(url: str, *, content_base: str = CONTENT_RAW_BASE) -> dict:
     listing_type, slug = parse_listing_url(url)
     raw_url = f"{content_base}/{listing_type}/{slug}.md"
-    with urllib.request.urlopen(raw_url, timeout=15) as resp:
+    with urllib.request.urlopen(raw_url, timeout=timeout_seconds(FETCH_TIMEOUT)) as resp:
         md = resp.read().decode("utf-8")
     fm = parse_frontmatter(md)
     fm["_listing_type"] = listing_type

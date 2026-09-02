@@ -10,7 +10,7 @@ def test_extracts_integrations_including_multiword():
 
 def test_extracts_tier_and_platforms():
     vocab = extract_literals(FIXTURE.read_text())
-    assert vocab["tier"] == ["contributed", "community-reviewed", "certified"]
+    assert set(vocab["tier"]) == {"contributed", "community-reviewed", "certified"}
     assert "Claude Code" in vocab["compatible_platforms"]
 
 def test_unknown_field_absent_not_crashing():
@@ -31,3 +31,19 @@ def test_repeated_field_aggregates_not_overwrites():
     )
     vocab = extract_literals(source)
     assert sorted(vocab["playbook_type"]) == ["n8n", "sponsored", "standard"]
+
+
+def test_first_seen_order_is_preserved_across_repeated_definitions():
+    # The docstring promises first-seen order with new members APPENDED -- never
+    # last-write-wins, never re-sorted. The aggregation test above sorts its result,
+    # so this is the only test that can see an ordering regression.
+    source = (
+        'from typing import Literal\n'
+        'class A:\n'
+        '    tier: Literal["zulu", "alpha"]\n'
+        'class B:\n'
+        '    tier: Literal["mike", "alpha"]\n'
+    )
+    # "zulu" before "alpha" (source order, not sorted); "mike" appended; "alpha" not
+    # duplicated by the second definition.
+    assert extract_literals(source)["tier"] == ["zulu", "alpha", "mike"]

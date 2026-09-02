@@ -11,6 +11,10 @@ import shutil
 import subprocess
 import urllib.parse
 import urllib.request
+try:  # imported as a package member (pytest: `from scripts.find_pr import ...`)
+    from scripts._http import SEARCH_TIMEOUT, timeout_seconds
+except ImportError:  # run directly (`python3 scripts/find_pr.py`): scripts/ is sys.path[0]
+    from _http import SEARCH_TIMEOUT, timeout_seconds
 
 REPO = "tenable/cyberagents-exchange"
 SEARCH_URL = "https://api.github.com/search/issues"
@@ -40,14 +44,14 @@ def _search(query: str) -> dict:
         try:
             out = subprocess.run(
                 ["gh", "api", "-X", "GET", "/search/issues", "-f", f"q={query}"],
-                capture_output=True, text=True, timeout=20, check=True,
+                capture_output=True, text=True, timeout=timeout_seconds(SEARCH_TIMEOUT), check=True,
             ).stdout
             return json.loads(out)
         except (subprocess.SubprocessError, json.JSONDecodeError):
             pass  # fall through to urllib
     url = f"{SEARCH_URL}?q={urllib.parse.quote(query)}"
     req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json"})
-    with urllib.request.urlopen(req, timeout=20) as resp:
+    with urllib.request.urlopen(req, timeout=timeout_seconds(SEARCH_TIMEOUT)) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 

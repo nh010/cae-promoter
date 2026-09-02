@@ -80,8 +80,70 @@ if [ -n "$last" ]; then
   [ "$secs" -le 180 ] || note "beats run to $last, past the 3:00 target top (cap is for overage, not the plan)"
 fi
 
+# --- Cross-file clock arithmetic ---
+# The reference states a DURATION per beat (~0:30) and the template states a SPAN
+# (~0:15-0:45). Nothing but this makes them agree, so editing one file's clocks alone
+# used to pass. Also pins contiguity (no gap or overlap between beats) and that the
+# durations actually sum to the final clock.
+python3 - "$REF" "$TPL" <<'PYCHK' || fail=1
+import re, sys
+
+ref_path, tpl_path = sys.argv[1], sys.argv[2]
+DASH = "\u2013\u2014-"
+ref_re = re.compile(r"^\d+\.\s+\*\*(?P<name>.+?)\s+\(~(?P<m>\d+):(?P<s>\d\d)\)\*\*")
+tpl_re = re.compile(
+    r"^-\s+\*\*(?P<name>.+?)\s+\(~(?P<m1>\d+):(?P<s1>\d\d)[" + DASH + r"]"
+    r"(?P<m2>\d+):(?P<s2>\d\d)\):\*\*"
+)
+
+def secs(m, s): return int(m) * 60 + int(s)
+def mmss(t): return f"{t // 60}:{t % 60:02d}"
+
+ref, tpl = [], []
+for line in open(ref_path, encoding="utf-8"):
+    if (m := ref_re.match(line)):
+        ref.append((m["name"], secs(m["m"], m["s"])))
+for line in open(tpl_path, encoding="utf-8"):
+    if (m := tpl_re.match(line)):
+        tpl.append((m["name"], secs(m["m1"], m["s1"]), secs(m["m2"], m["s2"])))
+
+bad = []
+if len(ref) != 5 or len(tpl) != 5:
+    print(f"FAIL: expected 5 beats in each file, parsed {len(ref)} reference / {len(tpl)} template")
+    sys.exit(1)
+
+for (rname, dur), (tname, start, end) in zip(ref, tpl):
+    if rname != tname:
+        bad.append(f"beat name mismatch: reference '{rname}' vs template '{tname}'")
+        continue
+    span = end - start
+    if span != dur:
+        bad.append(
+            f"'{rname}': reference says {mmss(dur)} but the template span "
+            f"{mmss(start)}-{mmss(end)} is {mmss(span)}"
+        )
+
+if tpl[0][1] != 0:
+    bad.append(f"first beat starts at {mmss(tpl[0][1])}, not 0:00")
+for (pname, _, pend), (nname, nstart, _) in zip(tpl, tpl[1:]):
+    if nstart != pend:
+        bad.append(
+            f"gap or overlap: '{pname}' ends {mmss(pend)} but '{nname}' starts {mmss(nstart)}"
+        )
+
+total = sum(d for _, d in ref)
+if total != tpl[-1][2]:
+    bad.append(
+        f"durations sum to {mmss(total)} but the template's last beat ends at {mmss(tpl[-1][2])}"
+    )
+
+for b in bad:
+    print(f"FAIL: {b}")
+sys.exit(1 if bad else 0)
+PYCHK
+
 if [ "$fail" -eq 0 ]; then
-  echo "OK: five beats in order, old beats gone, metric-or-anecdote required, 2-3 min target + 4:00 cap at all 4 sites, clocks land at ${last:-?}"
+  echo "OK: five beats in order, old beats gone, metric-or-anecdote required, 2-3 min target + 4:00 cap at all 4 sites, reference durations match template spans and sum to ${last:-?}"
   exit 0
 fi
 exit 1

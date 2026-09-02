@@ -1,6 +1,10 @@
 """Extract controlled-vocabulary Literal enums from the Exchange validator.py source."""
 import ast
 import urllib.request
+try:  # imported as a package member (pytest: `from scripts.read_vocab import ...`)
+    from scripts._http import FETCH_TIMEOUT, timeout_seconds
+except ImportError:  # run directly (`python3 scripts/read_vocab.py`): scripts/ is sys.path[0]
+    from _http import FETCH_TIMEOUT, timeout_seconds
 
 VALIDATOR_URL = "https://raw.githubusercontent.com/tenable/cyberagents-exchange/main/validator.py"
 
@@ -46,7 +50,7 @@ def extract_literals(source: str) -> dict[str, list[str]]:
 
 
 def fetch_vocab(url: str = VALIDATOR_URL) -> dict[str, list[str]]:
-    with urllib.request.urlopen(url, timeout=15) as resp:
+    with urllib.request.urlopen(url, timeout=timeout_seconds(FETCH_TIMEOUT)) as resp:
         source = resp.read().decode("utf-8")
     return extract_literals(source)
 
